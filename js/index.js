@@ -25,3 +25,26 @@ const button3 = document.querySelector('#btn3');
             event.target.style.border = '3px dotted orange';
 }); 
 
+const img1 = document.querySelector('#img1');
+    img1.addEventListener('mouseenter', function(event){
+        event.target.style.border = '4px ridge orange';
+});
+
+img1.addEventListener('mouseleave', function(event){
+    event.target.style.border = 'none';
+});
+
+const img4 = document.querySelector('#img4');
+  img4.addEventListener('mousedown', function(event){
+    event.target.style.opacity = '0';
+});
+
+img4.addEventListener('mouseup', function(event){
+    event.target.style.opacity = '1';
+});
+
+const p = document.querySelector('p');
+p.addEventListener('copy', function(event){
+  event.preventDefault();  
+  alert('CAUGHT YA, dont copy my paragraph!')
+});
